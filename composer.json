@@ -1,0 +1,37 @@
+{
+  "name": "mogull/aliyun-sts",
+  "description": "Aliyun STS for Laravel 5",
+  "keywords": [
+    "aliyun",
+    "sts",
+    "laravel"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Leo Liu",
+      "email": "liulong@shinetechchina.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mogull\\Aliyun\\Sts\\": "src",
+      "Sts\\": "src/sdk"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Mogull\\Aliyun\\Sts\\Provider\\LaravelAliyunStsServiceProvider"
+      ]
+    },
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
