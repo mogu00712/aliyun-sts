@@ -12,11 +12,10 @@ return [
           "Statement": [
             {
               "Action": [
-                "oss:Get*",
-                "oss:List*"
+                "oss:*"
               ],
               "Effect": "Allow",
-              "Resource": "*"
+              "Resource": ["acs:oss:*:*:*"]
             }
           ],
           "Version": "1"
