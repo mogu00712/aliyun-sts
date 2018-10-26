@@ -36,7 +36,7 @@ class Sts
      * @param string $clientName
      * @param int $duration
      */
-    public function __construct($endpointName, $regionId, $domain, $accessKeyId, $accessSecret, $roleArn, $policy, $clientName = '', $duration = 900)
+    public function __construct($endpointName, $regionId, $domain, $accessKeyId, $accessSecret, $roleArn, $policy, $clientName = '', $duration = config('aliyun_sts.expire_time'))
     {
         $this->endpointName = $endpointName;
         $this->regionId = $regionId;
